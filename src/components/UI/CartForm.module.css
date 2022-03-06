@@ -1,0 +1,155 @@
+.cartContainer{
+    padding: 3rem 0;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    background: white;
+}
+
+.insideCart{
+    width: 85%;
+    margin: auto;
+}
+
+.eachCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.cartName, .cartQuantity{
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 39%);
+}
+
+.cartMessage {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+}
+
+.cartName{
+    margin-right: auto;
+}
+
+.cartIncrement{
+    margin-left: auto;
+}
+
+.cartIcon{
+    margin: 0 .75rem;
+    color: rgb(63, 63, 63);
+    transition: .15s;
+}
+
+.cartIcon:hover{
+    cursor: pointer;
+    color: #005e00;
+}
+
+.cartDButton{
+    color: #d40101;
+    background: white;
+    border: 2px solid #d40101;
+    font-size: 1.05rem;
+    padding: .15rem .65rem;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.cartDButton:hover{
+    cursor: pointer;
+    color: white;
+    background: #d40101;
+}
+
+.cartOButton{
+    color: #005e00;
+    background: white;
+    border: 2px solid #005e00;
+    font-size: 1.05rem;
+    padding: .15rem .65rem;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.sendMessageButton{
+    color: #005e00;
+    background: white;
+    border: 2px solid #005e00;
+    font-size: 1.05rem;
+    padding: .15rem .65rem;
+    border-radius: 3px;
+    transition: .2s;
+    margin: auto;
+}
+
+.cartOButton:hover, .sendMessageButton:hover{
+    cursor: pointer;
+    color: white;
+    background: #005e00;
+}
+
+.cartLine{
+    margin: 2rem 0;
+}
+
+.forCartOrder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLoading{
+    margin: auto;
+}
+
+.allSendingText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.checkSpace{
+    height: 1rem;
+}
+
+@media (max-width: 700px) and (orientation: portrait){
+    .insideCart{
+        width: 95%;
+    }
+
+    .cartName, .cartQuantity{
+        font-size: .75rem;
+    } 
+
+    .cartMessage{
+        font-size: 1rem;
+    }
+
+    .cartIcon{
+        font-size: .75rem;
+        margin: 0 .45rem;
+    }
+
+    .cartDButton{
+        font-size: .75rem;
+        padding: .1rem, .4rem;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .cartName, .cartQuantity, .cartIcon, .cartDButton{
+        font-size: .75rem;
+    }
+
+    .cartMessage{
+        font-size: 1rem;
+    }
+}

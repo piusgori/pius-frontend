@@ -1,0 +1,250 @@
+.accountContainer{
+    padding: 3rem 0;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    background: white;
+}
+
+.insideAccount{
+    width: 85%;
+    margin: auto;
+}
+
+.accountLogin, .successHeading, .failureHeading{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.accountHeading{
+    text-align: center;
+    font-size: 1.35rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #e98d15;
+    padding: 1rem 0 0 0;
+}
+
+.accountRuling{
+    height: 5px;
+    margin: 1.25rem 0;
+    background-color: #e98d15;
+    border: none;
+}
+
+.accountDetail{
+    height: fit-content;
+    padding: 1rem .5rem;
+    border: .5px solid rgb(125, 125, 125);
+    width: 50%;
+    border-radius: 10px;
+}
+
+.accountLabel, .changePasswordLabel{
+    font-size: 1rem;
+    color: #e98d15;
+    padding: .5rem 0;
+}
+
+
+.accountData{
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+}
+
+.accountPChange{
+    width: 70%;
+    margin: auto;
+    padding: .25rem .75rem;
+    border: 1px solid #e98d15;
+    color: #e98d15;
+    background: white;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.accountPDisable{
+    width: 70%;
+    margin: auto;
+    padding: .25rem .75rem;
+    border: 1px solid #e98d15;
+    color: #e98d15;
+    background: white;
+    border-radius: 15px;
+    transition: .3s;
+    cursor: not-allowed;
+}
+
+.accountPChange:hover{
+    color: white;
+    cursor: pointer;
+    background: #e98d15;
+}
+
+
+.changePasswordForm{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.changePasswordInput{
+    padding: .25rem .5rem;
+    outline: none;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.changePasswordForm > .accountPChange, .accountPDisable {
+    margin-top: 1rem;
+}
+
+.insideProducts{
+    width: 85%;
+    margin: auto;
+}
+
+.accountProductsBody{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stret
+}
+
+.aEach{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    height: 50vh;
+    width: 22.5%;
+    margin: 1rem 0;
+}
+
+.aEachInside{
+    margin: .75rem;
+    height: 100%;
+}
+
+.aEachImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.aEachImage > img{
+    width: 100%;
+}
+
+.aEachName{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.aEachPrices{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.aEachPriceNew{
+    font-size: .85rem;
+    font-weight: 100;
+}
+
+.aEachPriceOld{
+    font-size: .75rem;
+    font-weight: 100;
+    text-decoration: line-through;
+    color: rgb(100, 100, 100);
+}
+
+.aEachButtonDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+}
+
+.aEachButton{
+    margin: .75rem;
+    padding: .25rem;
+    background: #e98d15;
+    border: 1px solid #e98d15;
+    border-radius: 50px;
+    color: white;
+    width: 70%;
+    margin: auto;
+    transition: .25s;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.aEachButton:hover{
+    cursor: pointer;
+    color: #e98d15;
+    background: white;
+}
+
+.between{
+    height: .75rem;
+}
+
+.successHeading{
+    color: #12dd00;
+}
+
+.failureHeading{
+    color: red;
+}
+
+.iconLoading{
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait){
+    .accountDetail{
+        width: 100%;
+    }
+
+    .aEach{
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) and (orientation: portrait){
+    .accountDetail{
+        width: 100%;
+    }
+    .aEach{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    .accountDetail{
+        width: 100%;
+    }
+
+    .aEach{
+        width: 45%;
+        height: 95vh;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) and (orientation: landscape) {
+    .aEach{
+        width: 45%;
+        height: 65vh;
+    }
+}

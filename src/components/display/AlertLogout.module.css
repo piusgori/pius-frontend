@@ -1,0 +1,84 @@
+.logoutAll{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.logoutNone{
+    display: none;
+}
+
+.logoutContainer{
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+}
+
+.logoutContainer > h1{
+    padding-bottom: .25rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    color: #e98d15;
+}
+
+.logoutContainer > .hr{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 2px;
+    background-color: #e98d15;
+}
+
+.logoutContainer > p{
+    font-size: 1.15rem;
+    padding-bottom: 1.75rem;
+    text-align: center;
+}
+
+.logoutContainer > button{
+    padding: .4rem 1.2rem;
+    border: 1px solid #e98d15;
+    background: white;
+    border-radius: 10px;
+    transition: .5s;
+    font-size: 1.15rem;
+    width: 17.5%;
+    float: right;
+}
+
+.logoutContainer > button:hover{
+    cursor: pointer;
+    color: white;
+    background: #e98d15;
+}
+
+@media (max-width: 1000px) and (orientation: portrait){
+    .logoutContainer{
+        width: 90%;
+    }
+    .logoutContainer > button{
+        font-size: .9rem;
+        width: 35%;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .logoutContainer{
+        width: 90%;
+    }
+    .logoutContainer > button{
+        font-size: .9rem;
+        width: 30%;
+    }
+}
+

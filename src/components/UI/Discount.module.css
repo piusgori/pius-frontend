@@ -1,0 +1,189 @@
+.contain{
+    background: white;
+    width: 100%;
+}
+
+.container{
+    padding: 2rem 2rem 5rem 2rem;
+    width: 100%;
+    height: max-content;
+}
+
+.container > h1, .container > h2{
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(60, 60, 60);
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding-bottom: .65rem;
+}
+
+.container > p{
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 0 7rem 1rem 7rem;
+    color: rgb(100, 100, 100);
+}
+
+.items{
+    height: 50vh;
+    width: 60%;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.each{
+    height: 25%;
+    width: 30%;
+    margin: 1rem;
+    display: flex;
+    padding: .5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+}
+.left{
+    flex: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.left > img{
+    height: 100%;
+}
+
+.right  {
+    flex: 60%;
+    background-color: white;
+}
+
+.text{
+    height: 85%;
+    margin: .5rem 1rem;
+}
+
+
+.top{
+    height: 48%;
+    width: 100%;
+}
+
+.top > h1{
+    font-size: .95rem;
+    font-weight: 100;
+    color: black;
+    text-transform: uppercase;
+}
+
+.bottom{
+    margin-top: .5rem;
+    height: 48%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom > P {
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.bottom > .new{
+    color: black;
+}
+
+.bottom > .old {
+    color: rgb(100, 100, 100);
+    text-decoration: line-through;
+}
+
+.iconLoading{
+    margin: auto;
+}
+
+.noProducts{
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+    .items{
+        height: auto;
+        width: 95%;
+        margin-top: 1rem;
+    }  
+    .each{
+        height: 20vh;
+        width: 100%;
+    } 
+
+    .container > h1, .container > h2{
+        font-size: 2rem;
+    }
+
+    .container > P{
+        font-size: 1rem;
+        padding: 0 1rem 3rem 1rem;
+    }
+    .left > img{
+        height: 110%;
+    }
+    .top > h1{
+        font-size: .785rem;
+    }
+    .bottom > p{
+        font-size: .655rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) and (orientation: portrait){
+    .items{
+        height: auto;
+        width: 95%;
+        margin-top: 1rem;
+    }  
+    .each{
+        height: 12.5vh;
+        width: 40%;
+    } 
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .items{
+        height: auto;
+        width: 95%;
+        margin-top: 1rem;
+    }  
+    .each{
+        height: 40vh;
+        width: 60%;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1400px) and (orientation: landscape){
+    .items{
+        height: auto;
+        width: 95%;
+        margin-top: 1rem;
+    }  
+    .each{
+        height: 20vh;
+        width: 37.5%;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 2000px) and (orientation: landscape){
+    .container{
+        padding-bottom: 20rem;
+    }
+}
+
+

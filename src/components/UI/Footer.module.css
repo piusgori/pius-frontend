@@ -1,0 +1,119 @@
+footer{
+    background: #1e1e1e;
+}
+
+.footer{
+    padding: 6rem 0;
+}
+
+.content{
+    width: 95%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.each{
+    flex: 50%;
+
+}
+
+.each > h1{
+    color: white;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.each > p{
+    color: rgb(170, 170, 170);
+    padding-bottom: 1.25rem;
+}
+
+.pLoading{
+    color: #92f589;
+    padding-bottom: 1rem;
+}
+
+.pSuccess {
+    color: #62a1f3;
+    padding-bottom: 1rem;
+}
+
+
+.send > input{
+    border: none;
+    outline: none;
+    padding: .65rem;
+}
+.send > input:focus{
+    border: none;
+    outline: none;
+}
+
+.fButton, .fButtonDisabled{
+    border: none;
+    padding: .65rem 2rem;
+    color: white;
+    background: orange;
+}
+
+.fButtonDisabled{
+    cursor: not-allowed;
+}
+
+.fButton{
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons > p, .icons > p , a{
+    color: white;
+    font-size: 1.65rem;
+    margin: 0 1.25rem;
+    transition: .5s;
+}
+
+.icons > p:first-child{
+    margin-left: 0;
+}
+
+.icons > p:hover, .icons > p > a:hover{
+    color: #e98d15;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) and (orientation: portrait){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .each:first-child{
+        margin-bottom: 5rem;
+    }
+
+    .send{
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .each:first-child{
+        margin-bottom: 5rem;
+    }
+
+    .send{
+        display: flex;
+    }
+}

@@ -1,0 +1,147 @@
+.contain{
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    background: url('../images/cover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: slide-down .8s ease-out forwards;
+}
+
+@keyframes slide-down{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slidid{
+    from{
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rest{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slidid 1.2s ease-out forwards;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+}
+
+.h1, .h2, .eachB{
+    padding-top: 1rem;
+}
+
+.h1{
+    font-size: 1.1rem;
+    color: #e98d15;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2{
+    font-size: 5.5rem;
+    color: white;    
+    text-align: center;
+}
+
+.eachB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeLink{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.first, .second{
+    margin: 0 .65rem;
+    padding: .65rem 1.25rem;
+    border: 2px solid #e98d15;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.05rem;
+    transition: 1s;
+}
+
+.first{
+    background: #e98d15;
+}
+
+.second{
+    background: transparent;
+}
+
+.first:hover, .second:hover{
+    cursor: pointer;
+}
+
+.first:hover{
+    background: transparent;
+}
+
+.second:hover{
+    background: #e98d15;
+}
+
+
+@media (max-width: 600px) and (orientation: portrait){
+    .h1{
+        font: .85rem;
+    }
+
+    .h2{
+        font-size: 2rem;
+        margin: .5rem 1rem;
+        text-align: center;
+    }
+
+    .eachB{
+        margin-top: 1.25rem;
+        flex-direction: column;
+    }
+
+    .first, .second{
+        width: 75%;
+        margin: auto;
+    }
+
+    .first{
+        margin-bottom: .75rem;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 420px) and (orientation: portrait){
+    .h2{
+        font-size: 1.65rem;
+    }
+} 
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .h1{
+        font-size: .95;
+    }
+
+    .h2{
+        font-size: 2.75rem;
+    }
+}

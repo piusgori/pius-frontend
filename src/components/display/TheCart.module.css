@@ -1,0 +1,33 @@
+
+.showingCart{
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    background: rgb(0, 110, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+}
+
+.cartingNone{
+    display: none;
+}
+
+.insideShowingCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+.insideShowingCart > h1:first-child{
+    margin-right: auto;
+}
+
+.insideShowingCart > h1{
+    font-size: 1rem;
+    color: white;
+}

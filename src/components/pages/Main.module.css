@@ -1,0 +1,9 @@
+.none{
+    display: none;
+}
+
+
+.hideOverflow{
+    height: 100vh;
+    overflow: hidden;
+}

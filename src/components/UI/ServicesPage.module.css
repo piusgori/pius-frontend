@@ -1,0 +1,89 @@
+.servicesContainer{
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+}
+
+.insideServices{
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icon{
+    color: #c48f00;
+    font-size: 1.85rem;
+}
+
+.eachService{
+    margin: 1rem 2rem;
+}
+
+.right h1{
+    font-size: 1.15rem;
+}
+
+.right > p{
+    font-size: 1rem;
+    text-align: start;
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+    .insideServices{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+    
+
+    .icon{
+        font-size: 1.15rem;
+    }
+
+    .right h1{
+        font-size: .8rem;
+    }
+    .right p{
+        font-size: .65rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) and (orientation: portrait){
+    .insideServices{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+    
+}
+
+@media (max-width: 800px) and (orientation: landscape){
+    /* .insideServices{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 3rem 1rem 1rem;
+    } */
+    
+
+    .icon{
+        font-size: 1.15rem;
+    }
+
+    .right h1{
+        font-size: .8rem;
+    }
+    .right p{
+        font-size: .65rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) and (orientation: landscape){
+    .insideServices{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+    
+}

@@ -1,0 +1,232 @@
+.container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lup, .lusp{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.errorDiv{
+    background: #f5a2a2;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+}
+
+.errorDiv > p{
+    color: red;
+    text-align: center;
+}
+
+.lup{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.lusp{
+    color: #e98d15;
+}
+.container > form, .lForm{
+    width: 50%;
+    margin: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.ll, .li{
+    margin: .5rem 0;
+}
+
+.lLoading{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.lMessaging{
+    text-align: center;
+    font-size: 1rem;
+    color: #12dd00;
+    padding: 1.25rem 0;
+}
+
+.loading{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: black;
+    text-align: center;
+}
+
+.ll{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #e98d15;
+}
+
+.li{
+    padding: .5rem;
+    border: 1px solid #e98d15;
+    outline: none;
+    border-radius: 10px;
+}
+
+.li:focus{
+    border-color: #058d0e;
+}
+
+.li[type=password]{
+    margin-bottom: 3rem;
+}
+
+.lb{
+    width: 40%;
+    margin: auto;
+    border: 2px solid #e98d15;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    color: white;
+    background: #e98d15;
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    transition: .5s;
+    text-align: center;
+}
+
+.lUnableClick{
+    width: 40%;
+    margin: auto;
+    border: 2px solid #e98d15;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    color: white;
+    background: #e98d15;
+    font-weight: 500;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    transition: .5s;
+    cursor: not-allowed;
+}
+
+.lo{
+    border: 1px solid #e98d15;
+    background-color: white;
+}
+
+
+.lb:hover{
+    background: white;
+    color: #e98d15;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    font-size: 1rem;
+}
+
+.link:hover{
+    color: #e98d15;
+}
+
+.lp{
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #e98d15;
+    text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.lp:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.iconLoading{
+    margin: auto;
+}
+
+@media (max-width: 1000px) and (orientation: portrait){
+    .container{
+        width: 90%;
+    }
+
+    .container > form, .lForm{
+        width: 100%;
+    }
+
+    label{
+        font-size: 1.35rem;
+    }
+
+    form > button, .lForm > button{
+        width: 90%;
+    }
+    .lb{
+        font-size: 1rem;
+    }
+
+    .lb{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lup, .lusp{
+        font-size: 1rem;
+    }
+    .ll{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .container{
+        width: 90%;
+    }
+
+    .container > form, .lForm{
+        width: 100%;
+    }
+
+    label{
+        font-size: 1.35rem;
+    }
+
+    .lb{
+        width: 90%;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lup, .lusp{
+        font-size: 1rem;
+    }
+
+    .ll{
+        font-size: 1rem;
+    }
+}
+
+

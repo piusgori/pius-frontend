@@ -1,0 +1,147 @@
+.contain{
+    background-color: white;
+}
+
+.container {
+    padding: 2rem 5rem 6rem 5rem;
+}
+
+.container > h1, .nothing{
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(60, 60, 60);
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding-bottom: .65rem;
+}
+
+.container > p{
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 0 7rem 3rem 7rem;
+    color: #646464;
+}
+
+.products{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button > button{
+    margin: 0 .5rem;
+    padding: .5rem 1.1rem;
+    border: 1.5px solid #e98d15;
+    border-radius: 50px;
+    background: #e98d15;
+    color: white;
+    transition: .5s;
+    font-size: .75rem;
+}
+
+.button > button:hover{
+    color: #e98d15;
+    background: white;
+    cursor: pointer;
+}
+
+.mIconMinus{
+    margin-right: .25rem;
+}
+
+.mIconPlus{
+    margin-left: .25rem;
+}
+
+.mIconMinus:hover, .mIconPlus:hover{
+    cursor: pointer;
+}
+
+.linky{
+    color: white;
+    text-decoration: none;
+    font-size: .75rem;
+}
+
+.button > button:hover .linky{
+    color: #e98d15;
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+    .container {
+        padding: 2rem .5rem 4rem .5rem;
+    }
+
+    .container > h1, .nothing{
+        font-size: 2rem;
+    }
+
+    .container > P{
+        font-size: 1rem;
+        padding: 0 1rem 3rem 1rem;
+    }
+
+    .button{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+    }
+
+    .button > button{
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 650px) and (max-width: 1000px) and (orientation: portrait){
+    .container {
+        padding: 2rem .5rem 4rem .5rem;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape){
+    .container {
+        padding: 2rem .5rem 4rem .5rem;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px) and (orientation: landscape){
+    .button{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+    }
+
+    .button > button{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) and (orientation: landscape){
+    .container{
+        padding: 2rem 1rem 4rem 1rem;
+    }
+    .button{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+    }
+
+    .button > button{
+        margin-bottom: 1rem;
+    }
+}
+

@@ -1,0 +1,190 @@
+.categori{
+    padding: 3rem 0;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    background: white;
+}
+
+.inCategori{
+    width: 85%;
+    margin: auto;
+}
+
+.categoryHeading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: #e98d15;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+}
+
+.hcEach > p, .hcEach > label{
+    color: white;
+}
+
+.hcEach:first-child{
+    margin-right: auto;
+}
+
+.hcSelect{
+    border: none;
+    outline: none;
+}
+
+.hcSelect:focus{
+    border: none;
+    outline: none;
+}
+
+.categoryBody{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.cEach{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    height: 50vh;
+    width: 22.5%;
+    margin: 1rem 0;
+}
+
+.cEachInside{
+    margin: .75rem;
+    height: 100%;
+}
+
+.cEachImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.cEachImage > img{
+    width: 100%;
+}
+
+.cEachName{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.cEachPrices{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.cEachPriceNew{
+    font-size: .85rem;
+    font-weight: 100;
+}
+
+.cEachPriceOld{
+    font-size: .75rem;
+    font-weight: 100;
+    text-decoration: line-through;
+    color: rgb(100, 100, 100);
+}
+
+.cEachButtonDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.cEachButton{
+    padding: .25rem;
+    background: #e98d15;
+    border: 1px solid #e98d15;
+    border-radius: 50px;
+    color: white;
+    width: 70%;
+    transition: .25s;
+}
+
+.cEachButton:hover{
+    cursor: pointer;
+    color: #e98d15;
+    background: white;
+}
+
+.foundNone{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.iconLoading{
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait){
+    .hcEach > p, .hcEach > label{
+        font-size: 1rem;
+    }
+
+    .cEach{
+        width: 80%;
+        height: 60vh;
+    }
+    .foundNone{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) and (orientation: portrait){
+    .hcEach > p, .hcEach > label{
+        font-size: 1rem;
+    }
+
+    .cEach{
+        width: 45%;
+    }
+    .foundNone{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    .hcEach > p, .hcEach > label{
+        font-size: 1rem;
+    }
+    .cEach{
+        width: 45%;
+        height: 95vh;
+    }
+    .foundNone{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) and (orientation: landscape) {
+    .cEach{
+        width: 45%;
+        height: 65vh;
+    }
+}
+
+@media (max-width: 300px) and (orientation: portrait){
+    .hcEach > p, .hcEach > label{
+        font-size: .75rem;
+    }
+    .foundNone{
+        font-size: 1rem;
+    }
+}

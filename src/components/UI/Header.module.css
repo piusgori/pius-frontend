@@ -1,0 +1,134 @@
+.navigation{
+    height: 8vh;
+    width: 100%;
+    background: transparent;
+    margin-top: 0;
+    transition: 1s;
+    animation: slide-down .8s ease-out forwards;
+}
+
+.navbar{
+    height: 8vh;
+    width: 100%;
+    background: black;
+    margin-top: 0;
+    transition: 1s;
+    animation: slide-down .8s ease-out forwards;
+}
+
+.fixed{
+    height: 8vh;
+    width: 100%;
+    background: black;
+    margin-top: 0;
+    transition: 1s;
+    animation: slide-down .8s ease-out forwards;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+}
+
+.unordered{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.unordered .list:first-child{
+    margin-right: auto;
+    margin-left: -1rem;
+    transition: .5s;
+}
+.unordered .list:first-child:hover{
+    margin-right: auto;
+    margin-left: -1rem;
+    color: #ffbb00cb;
+    cursor: pointer;
+}
+.unordered .list:last-child{
+    margin-right: 1rem;
+}
+
+.unordered .list, .link {
+    padding: .65rem 1rem;
+    margin: .5rem;
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.active{
+    font-size: 1rem;
+}
+
+.active, .unordered .list:hover, .link:hover{
+    padding: .65rem 1.5rem;
+    margin: .5rem;
+    color: #ffbb00cb;  
+    cursor: pointer; 
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+@keyframes slide-down{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 410px) and (max-width: 420px) and (orientation: portrait){
+
+}
+
+@media (max-width: 500px) and (orientation: portrait){
+    .unordered .list:last-child{
+        margin-right: 1rem;
+    }
+    .unordered .list, .link{
+        font-size: .8rem;
+        padding: .4rem .3rem;
+        margin: .25rem;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 600px) and (orientation: portrait){
+    .unordered .list:last-child{
+        margin-right: 2rem;
+    }
+    .unordered .list, .link{
+        font-size: .8rem;
+        padding: .4rem .3rem;
+        margin: .25rem;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+    .navigation{
+        height: 15vh;
+    }
+
+    .navbar{
+        height: 15vh;
+    }
+
+    .fixed{
+        height: 15vh;
+    }
+    .unordered .list:last-child{
+        margin-right: 5rem;
+    }
+    .unordered .list{
+        font-size: .8rem;
+        padding: .4rem .5rem;
+        margin: .25rem;
+    }
+}

@@ -1,0 +1,116 @@
+.sEach{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.46);
+    border-radius: 10px;
+    height: 50vh;
+    width: 22.5%;
+    margin: 1rem 0;
+}
+
+.sEachInside{
+    margin: .75rem;
+    height: 100%;
+}
+
+.sEachImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.sEachImage > img{
+    width: 100%;
+}
+
+.sEachName{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.sEachPrices{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.sEachPriceNew{
+    font-size: .85rem;
+    font-weight: 100;
+}
+
+.sEachPriceOld{
+    font-size: .75rem;
+    font-weight: 100;
+    text-decoration: line-through;
+    color: rgb(100, 100, 100);
+}
+
+.sEachButtonDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+}
+
+.sEachButton{
+    margin: .75rem;
+    padding: .25rem;
+    background: #e98d15;
+    border: 1px solid #e98d15;
+    border-radius: 50px;
+    color: white;
+    width: 70%;
+    margin: auto;
+    transition: .25s;
+}
+
+.between{
+    height: .75rem;
+}
+
+.sLinky{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sEachButton:hover{
+    cursor: pointer;
+    color: #e98d15;
+    background: white;
+}
+
+.sLinky:hover{
+    cursor: pointer;
+    color: #e98d15;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait){
+    .sEach{
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) and (orientation: portrait){
+    .sEach{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape){
+    .sEach{
+        width: 45%;
+        height: 95vh;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) and (orientation: landscape) {
+    .sEach{
+        width: 45%;
+        height: 65vh;
+    }
+}
